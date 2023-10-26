@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alistar-se</title>
+    <link rel="stylesheet" href="../Navbar/style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../Imagens/brajoesLogoTransparente.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="../Imagens/brajoesLogoTransparente.png" class="logo" alt="Logo brajoes" width="80">
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a class="menuList" href="../Foryou/index.html">Início</a></li>
+            <li><a class="menuList" href="#">Sobre</a></li>
+            <li><a class="menuList" href="../Foryou/index.html">Foryou</a></li>
+            <li><a class="menuList" href="#">50 anos</a></li>
+            <li><a class="menuList" href="../login/login.html">Ingressar</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+    <section class="container">
+        <form action="cadastro.php" method="POST" class="formRegister">
+            <h1>Olá, recruta! Você tem interesse em se alistar como soldado?</h1>
+            <div id="notify">
+                <img src="" alt="">
+            </div>
+            <br>
+            <div class="division">
+                <div class="firstColumn">
+                    <label for="name">Nome:</label>
+                    <input type="text" placeholder="Nome*" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="E-mail*" required>
+                    <br>
+                    <label for="numero">Número :</label>
+                    <input type="number" placeholder="Número (Opcional)" >
+                    <br>
+                    <label for="estado">Estado:</label>
+                    <input type="text" placeholder="Estado*" required>
+                    <br>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" placeholder="Cidade*" required>
+                    
+                </div>
+                <div class="twoColumn">
+                    <br>
+                    <label for="pais">País:</label>
+                    <input type="text" placeholder="País*" required>
+                    <br>
+                    <label for="password">Senha:</label>
+                    <input type="password" placeholder="Senha*" required>
+                    <br>
+                    <div class="checkboxDiv">
+                    
+                        <input type="checkbox" name="novidades" id="novidades">
+                        <label for="novidades">Receber novidades por e-mail</label>
+                    </div>
+                    <br>
+                    <input type="submit" value="Alistar-se" id="submitRegister">
+                </div>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>Brajoes</h4>
+                    <hr>
+                    <ul>
+                        <li><a href="#"> Quem somos </a></li>
+                        <li><a href=""> política de privacidade </a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Se inscreva!</h4>
+                    <div class="form-sub">
+                        <form>
+                            <input type="email" placeholder="Digite o seu e-mail" required>
+                            <button>Inscrever</button>
+                        </form>
+                    </div>
+
+                    <div class="medias-socias">
+                        <a href="#"> <i class="fa fa-facebook"></i> </a>
+                        <a href="#"> <i class="fa fa-instagram"></i> </a>
+                        <a href="#"> <i class="fa fa-youtube"></i> </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../Navbar/mobile-navbar.js"></script>
+    <script src="../close.js"></script>
+</body>
+
+</html>

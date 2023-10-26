@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}:root {
+    --verde: #224724;
+    --amarelo: #F1B103;
+    --azul: #002276;
+
+}
+@font-face {
+    font-family: 'ralewayNormal';
+    src: url(../Fontes/Raleway/Raleway-Medium.ttf);
+  } 
+form:first-child, label, input::placeholder{
+    font-family: 'ralewayNormal';
+}
+body, html{
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #375a2c;
+    gap: 50px;
+    background: linear-gradient( #243a1c,#375a2c, #243a1c);
+}
+.formRegister {
+    width: 50rem;
+    background-color: #fff;
+    height: 30rem;
+    padding: 25px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+.boneco {
+    right: -100px;
+    bottom: -150px;
+    width: 250px;
+}
+.firstColumn {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.twoColumn {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    position: relative;
+}
+input {
+    padding: 5px;
+    border: 0;
+    
+}
+input[type='text'],input[type='password'], input[type='email'], input[type="number"]{
+    border-bottom: var(--verde) 2px solid;
+}
+input[type="number"]:focus,input[type="text"]:focus, input[type="password"]:focus {
+    background-color: var(--amarelo);
+    color: #fff;
+
+}
+input[type='text']:focus{
+    border-radius: 5px;
+    outline: var(--verde) 2px solid;
+    border-bottom: 0 ;
+    
+}
+#submitRegister {
+    background-color: #F1B103;
+    color: #fff;
+    padding: 10px;
+}
+#submitRegister:focus, #submitRegister:active, #submitRegister:hover{
+    opacity: 0.8;
+}
+h1 {
+    color: var(--azul);
+}
+.division {
+    display: flex;
+    width: 70%;
+    height: 80%;
+    justify-content: space-between;
+}
+.checkboxDiv {
+    display: flex;
+    gap: 15px;
+    font-size: 15px;
+}
+#notify{
+    background-color: #F1B103;
+    position: absolute;
+    z-index: 99;
+    right: 50%;
+    top: 50%;
+    margin-right: -200px;
+    padding: 15px;
+    width: 300px;
+    display: flex;
+
+}
+@media(max-width:768px) {
+    .formRegister{
+        width: 100%;
+    }
+    .division{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .container {
+        height: 60rem;
+    }
+    .formRegister{
+        height: 80%;
+        padding-bottom: 20px;
+        gap: 20px;
+    }
+    
+}

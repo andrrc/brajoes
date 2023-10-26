@@ -1,0 +1,257 @@
+:root {
+    --verde: #224724;
+    --amarelo: #F1B103;
+    --azul: #002276;
+
+}
+body {
+    background: linear-gradient( #243a1c,#375a2c, #243a1c);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
+    overflow-x: hidden;
+
+}
+@font-face {
+    font-family: 'ralewayNormal';
+    src: url(../Fontes\Raleway\Raleway-Medium.ttf/);
+  }
+h1,h2,h3 {
+    font-family: 'ralewayNormal';
+}
+.allContentPost {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.boxArticle {
+    width: 70rem;
+    height: fit-content;
+    padding-inline: 20px;
+    padding-block: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 30px;
+    gap: 10px;
+    z-index: 2;
+}
+
+.infoPost {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+}
+h3{
+    font-size: 15px;
+}
+.textInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    opacity: 0.8;
+    
+}
+.infoAboutPost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
+    gap: 20px;
+}
+hr{
+    width: 100%;
+    border: 1px solid black;
+    opacity: 0.5;
+}
+p{
+    flex-wrap: wrap;
+    font-family: 'ralewayNormal';
+    height: fit-content;
+}
+.contentPost {
+    display: flex;
+    flex-direction: column;
+    background:rgba(22, 24, 35, 0.03);
+    padding: 20px;
+    text-align: center;
+}
+.contentPost > img, .contentPost {
+    border-radius: 5px;
+}
+.imageContent {
+     border: 3px solid black;
+}
+.laerte {
+    border-radius: 100%;
+    border: 2px solid black;
+}
+.titulo {
+    padding: 20px 50px 20px 50px;
+}
+.interaction{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: end;
+    margin-left: -50px;
+    gap: 25px;
+}
+.comentario, .curtida {
+    width: 100px;
+    background-color: #224724;
+    border: 3px solid black;
+    box-shadow: 5px 5px black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+input[type="text"]{
+    width: 80%;
+    height: 50%;
+    padding: 10px;
+    outline: 0;
+    border: 0;
+    border-bottom: 3px solid #F1B103;
+}
+.quantidade{
+    color: white;
+}
+.foryou {
+    color: #F1B103;
+}
+#comentario {
+    cursor: pointer;
+}
+.sectionComment{
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.507);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    z-index: 99999;
+}
+.boxComment {
+    width: 30rem;
+    height: 30rem;
+    background-color: #243a1c;
+    box-shadow: 20px 20px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    position: absolute;
+    top: 20%;
+}
+.inputText{
+    width: 300px;
+    height: 150px;
+    z-index: 999;
+    resize: none;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    font-family: 'ralewayNormal';
+}
+.inputText::placeholder{
+    font-family: 'ralewayNormal';
+}
+.sendButton {
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px black;
+    border: 0;
+    font-family: 'ralewayNormal';
+}
+.comentariosBox {
+    width: 70rem;
+    height: fit-content;
+    display: flex;
+    padding-inline: 20px;
+    padding-block: 30px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 0 0 30px 30px;
+    padding-block: 50px;
+    margin-top: -25px;
+    flex-direction: column;
+    gap: 20px;
+}
+.comentariosBoxTwo{
+    width: 70rem;
+    height: fit-content;
+    display: flex;
+    padding-inline: 20px;
+    padding-block: 30px;
+    background-color: #eeeeee;
+    border-radius: 0 0 30px 30px;
+    padding-block: 50px;
+    margin-top: -25px;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.infoShared{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.nameShared{
+    border-bottom: 3px solid black;
+}
+.itemAboutWho {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+@media (max-width:1250px) {
+    .boxArticle{
+        width: 80%;
+    }
+    .comentariosBox, .comentariosBoxTwo{
+        width: 80%;
+    }
+    .boxComment {
+        width: 100%;
+        box-shadow: none;
+    }
+    .inputText{
+        width: 80%;
+    }
+    .sendButton {
+        width: 80%;
+    }
+}
+@media (max-width:999px) {
+    .boxArticle{
+        width: 100%;
+        border-radius: 0;
+    }
+    .comentariosBox, .comentariosBoxTwo{
+        width: 100%;
+        border-radius: 0;
+    }
+    .boxComment {
+        width: 100%;
+        box-shadow: none;
+    }
+    .inputText{
+        width: 80%;
+    }
+    .sendButton {
+        width: 80%;
+    }
+}

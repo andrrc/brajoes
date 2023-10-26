@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}:root {
+    --verde: #224724;
+    --amarelo: #F1B103;
+    --azul: #002276;
+
+}
+@font-face {
+    font-family: 'ralewayNormal';
+    src: url(../Fontes/Raleway/Raleway-Medium.ttf);
+  } 
+form:first-child, label, input::placeholder{
+    font-family: 'ralewayNormal';
+}
+body, html{
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #375a2c;
+    gap: 50px;
+    background: linear-gradient( #243a1c,#375a2c, #243a1c);
+}
+.formRegister {
+    width: 60rem;
+    background-color: #fff;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+.ImageLogin{
+    background-image: url(../../Imagens/Entrar\ \(1\).png);
+    width: 75%;
+    border-radius: 5px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+input::placeholder, input{
+    font-family: 'ralewayNormal';
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 100px;
+    
+}
+.firstColumn {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    padding: 10px;
+    border: 0;
+    width: 80%;
+    height: 2rem;
+    font-size: 15px;
+    text-align: center;
+    
+}
+input[type='text'],input[type='password'], input[type='email']{
+    border-bottom: var(--verde) 2px solid;
+}
+input[type='email']:active,input[type='email']:focus, input[type='password']:focus, input[type='password']:active{
+    border-radius: 5px;
+    outline: var(--verde) 2px solid;
+    border-bottom: 0 ;
+    
+}
+input[type="password"]:focus {
+    background-color: var(--amarelo);
+    color: #fff;
+
+}
+#submitRegister {
+    background-color: #F1B103;
+    color: #fff;
+    height: 2rem;
+    padding: 10px;
+    text-align: center;
+}
+#submitRegister:focus, #submitRegister:active, #submitRegister:hover{
+    opacity: 0.8;
+}
+h1 {
+    color: var(--azul);
+}
+.division {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkboxDiv {
+    display: flex;
+    gap: 15px;
+    font-size: 15px;
+}
+@media(max-width:768px) {
+    .division{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        padding-top: 50px;
+        gap: 20px;
+    }
+    .formRegister{
+        width: 100%;
+        height: fit-content;
+    }
+    .firstColumn{
+        width: 70%;
+    }
+    input{
+        width: 100%;
+    }
+    .ImageLogin{
+        width: 100%;
+        height: 30rem;
+    }
+    
+}
