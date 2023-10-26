@@ -236,6 +236,9 @@ input[type="text"]{
     }
 }
 @media (max-width:999px) {
+    body {
+        overflow-x: hidden;
+    }
     .boxArticle{
         width: 100%;
         border-radius: 0;
