@@ -19,7 +19,6 @@ form:first-child, label, input::placeholder{
 body, html{
     height: 100%;
     overflow-x: hidden;
-    background-color: #375a2c;
     gap: 50px;
     background: linear-gradient( #243a1c,#375a2c, #243a1c);
 }

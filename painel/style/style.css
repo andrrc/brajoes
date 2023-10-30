@@ -1,0 +1,69 @@
+.painelADM {
+    width: 50rem;
+    height: 30rem;
+    background-color: #243a1c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding-block: 20px;
+}
+@font-face {
+    font-family: 'ralewayNormal';
+    src: url(../Fontes/Raleway/Raleway-Medium.ttf);
+  } 
+h1{
+    color: white;
+    font-family: 'ralewayNormal';
+}
+.painelADM > a{
+
+    background-color: #F1B103;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+body{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+
+}
+.deslogar{
+    background-color: rgb(145, 4, 4) !important;
+}
+body, html{
+    height: 100%;
+    overflow-x: hidden;
+    gap: 50px;
+    background: linear-gradient( #243a1c,#375a2c, #243a1c);
+}
+:root {
+    --verde: #224724;
+    --amarelo: #F1B103;
+    --azul: #002276;
+
+}
+@media (max-width:999px) {
+    .painelADM{
+        width: 100%;
+    }
+    .painelADM > h1 {
+        font-size: 15px;
+    }
+    .painelADM > a{
+        width: 200px;
+        height: 50px;
+       font-size: 20px;
+       padding-block: 10px;
+    }
+    
+}

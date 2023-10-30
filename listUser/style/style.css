@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+}
+@font-face {
+  font-family: "ralewayNormal";
+  src: url(../Fontes/Raleway/Raleway-Medium.ttf);
+}
+:root {
+  --verde: #224724;
+  --amarelo: #f1b103;
+  --azul: #002276;
+}
+body,
+html {
+  height: 100%;
+  gap: 50px;
+  background: linear-gradient(#243a1c, #375a2c, #243a1c);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: scroll;
+}
+table th,table td {
+  font-size: 14px;
+  padding: 10px 15px;
+  border: solid 1px #ccc;
+  font-family: 'ralewayNormal';
+  background-color: white;
+}
+input {
+  border: solid 1px #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  width: 50rem;
+}
+input::placeholder {
+  font-family: "ralewayNormal";
+}
+#listaRegistro {
+    width: 100vh;
+}
+#inputPesquisa {
+    width: 100%;
+}
