@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Listar Usuario</title>
+    <title>Cadastrar Usuario</title>
     <link rel="stylesheet" href="../Navbar/style.css" />
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="../Cadastro/style/style.css" />
     <link rel="stylesheet" href="../Cadastro/style/footer.css" />
+    <link rel="stylesheet" href="style/style.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -44,48 +45,51 @@
         </ul>
       </nav>
     </header>
-    <div id="listaRegistros"  style="overflow-x:auto;">
-      <div>
-        <input
-          placeholder="PESQUISAR"
-          autofocus
-          id="inputPesquisa"
-        />
-      </div>
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Nome</th>
-            <th>Telefone</th>
-            <th>E-mail</th>
-            <th>Endereço</th>
-          </tr>
-        </thead>
-        <tbody id="listaRegistrosBody">
-          <tr>
-            <td>01</td>
-            <td>André</td>
-            <td>15996243489</td>
-            <td>andre.cvfilho@senacsp.edu.br</td>
-            <td>Rua Angelina Rinaldi</td>
-          </tr>
-          <tr>
-            <td>02</td>
-            <td>Guilherme</td>
-            <td>15996243489</td>
-            <td>guilherme.hsilva@senacsp.edu.br</td>
-            <td>Algum lugar</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <section class="container">
+      <form action="cadastro.php" method="POST" class="formRegister">
+        <h1>Apenas administradores tem acesso a esse painel.</h1>
+        <br>
+        <div class="division">
+          <div class="firstColumn">
+            <label for="name">Nome do Usuário:</label>
+            <input type="text" placeholder="Nome*" required />
+            <br>
+            <label for="email">Email do Usuário:</label>
+            <input type="email" placeholder="E-mail*" required />
+            <br>
+            <label for="numero">Número do Usuário:</label>
+            <input type="number" placeholder="Número (Opcional)" />
+            <br>
+            <label for="estado">Estado do Usuário:</label>
+            <input type="text" placeholder="Estado*" required />
+            <br>
+            <label for="cidade">Cidade do Usuário:</label>
+            <input type="text" placeholder="Cidade*" required />
+          </div>
+          <div class="twoColumn">
+            <br>
+            <label for="pais">País do Usuário:</label>
+            <input type="text" placeholder="País*" required />
+            <br>
+            <label for="estado">Tipo de Usuário</label>
+	<select id="typeUser" name="typeUser" required>
+		<option value="usuario">Usuário</option>
+		<option value="adminstrador">Administrador</option>
+            <br>
+            <label for="password">Senha:</label>
+            <input type="password" placeholder="Senha*" required />
+            <br>
+            <input type="submit" value="Alistar-se" id="submitRegister" />
+          </div>
+        </div>
+      </form>
+    </section>
     <footer>
       <div class="container-footer">
         <div class="row-footer">
           <div class="footer-col">
             <h4>Brajoes</h4>
-            <hr />
+            <hr>
             <ul>
               <li><a href="../sobre/sobre.html"> Quem somos </a></li>
               <li><a href=""> política de privacidade </a></li>
@@ -103,7 +107,6 @@
                 <button>Inscrever</button>
               </form>
             </div>
-
             <div class="medias-socias">
               <a href="#"> <i class="fa fa-facebook"></i> </a>
               <a href="#"> <i class="fa fa-instagram"></i> </a>
